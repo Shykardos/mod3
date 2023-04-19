@@ -3,11 +3,12 @@ package com.goit;
 import org.h2.Driver;
 
 import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.SQLException;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.Objects;
+
 
 public class H2Repository implements AutoCloseable {
     private final Driver driver = new Driver();
